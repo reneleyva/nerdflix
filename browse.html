@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>NerdFlix | Browse</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+<body class="hold-transition skin-blue layout-top-nav">
+<div class="wrapper">
+
+  <header class="main-header">
+    <nav class="navbar navbar-static-top navbar-fixed-top">
+      <!-- <nav class="navbar navbar-default navbar-fixed-top">-->
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand"><b>Nerd</b>Flix</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown  messages-menu ">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Buscar">
+            </div>
+          </form>
+        </div>
+        <!-- /.navbar-collapse -->
+        <!-- Navbar Right Menu -->
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <!-- Notifications Menu -->
+            <li class="dropdown notifications-menu">
+              <!-- Menu toggle button -->
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-bell-o"></i>
+                <span class="label label-warning">5</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header">Tienes 5 notificaciones</li>
+                <li>
+                  <!-- Inner Menu: contains the notifications -->
+                  <ul class="menu">
+                    <li><!-- start notification -->
+                      <a href="#">
+                        <i class="fa fa-users text-aqua"></i> Capítulos de series
+                      </a>
+                    </li>
+                    <!-- end notification -->
+                  </ul>
+                </li>
+                <li class="footer"><a href="#">Ver todos</a></li>
+              </ul>
+            </li>
+
+            <!-- User Account Menu -->
+            <!-- <li class="dropdown user user-menu messages-menu">-->
+            <li class="dropdown messages-menu user user-menu">
+              <!-- Menu Toggle Button -->
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <!-- The user image in the navbar-->
+
+                <img src="http://placehold.it/160x160" alt="..." class="margin img-responsive user-image" width="160" height="160">
+                <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                <span class="hidden-xs">John Doe</span>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu users">
+                    <li><!-- start message -->
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="http://placehold.it/128x128" alt="..." class="margin img-responsive user-image" width="128" height="128">
+                        </div>
+                        <h4>
+                          David Doe
+                        </h4>
+                        <p>Última conexión <small><i class="fa fa-clock-o"></i> 5 días</small></p>
+                      </a>
+                    </li>
+                    <!-- end message -->
+                    <li><!-- start message -->
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="http://placehold.it/128x128" alt="..." class="margin img-responsive user-image" width="128" height="128">
+                        </div>
+                        <h4>
+                          John Doe
+                        </h4>
+                        <p>Última conexión <small><i class="fa fa-clock-o"></i> 5 días</small></p>
+                      </a>
+                    </li>
+                    <!-- end message -->
+                    <li><!-- start message -->
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="http://placehold.it/128x128" alt="..." class="margin img-responsive user-image" width="128" height="128">
+                        </div>
+                        <h4>
+                          Jane Doe
+                        </h4>
+                        <p>Última conexión <small><i class="fa fa-clock-o"></i> Online</small></p>
+                      </a>
+                    </li>
+                    <!-- end message -->
+                    <li><!-- start message -->
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="http://placehold.it/128x128" alt="..." class="margin img-responsive user-image" width="128" height="128">
+                        </div>
+                        <h4>
+                          Zara Doe
+                        </h4>
+                        <p>Última conexión <small><i class="fa fa-clock-o"></i> 1 min</small></p>
+                      </a>
+                    </li>
+                    <!-- end message -->
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+                <li class="footer"><a href="#">Cerrar Sesión</a></li>
+              </ul>
+              </li>
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-custom-menu -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+    <div class="container">
+
+      <!-- Main content -->
+      <section class="content">
+
+        <div class="col-md-12">
+         <h3>Categoría 1</h3>
+
+        <div class="well">
+            <div id="myCarousel" class="carousel slide">
+
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"> <i class="fa fa-window-minimize" aria-hidden="true"></i>
+</li>
+                    <li data-target="#myCarousel" data-slide-to="1"><i class="fa fa-window-minimize" aria-hidden="true"></i>
+</li>
+                    <li data-target="#myCarousel" data-slide-to="2"><i class="fa fa-window-minimize" aria-hidden="true"></i>
+</li>
+                  </ol>
+                    <div class="item active">
+                        <div class="row content-items">
+                          <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">A</a>
+                          </div>
+                          <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">B</a>
+                          </div>
+                          <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">C</a>
+                          </div>
+                          <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">D</a>
+                          </div>
+                          <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">E</a>
+                          </div>
+                          <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">F</a>
+                          </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item">
+                        <div class="row content-items">
+                          <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">G</a>
+                          </div>
+                          <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">H</a>
+                          </div>
+                          <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">I</a>
+                          </div>
+                          <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">J</a>
+                          </div>
+                          <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">K</a>
+                          </div>
+                          <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">L</a>
+                          </div>
+                        </div>
+                      </div>
+                        <div class="item">
+                            <div class="row content-items">
+                              <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">M</a>
+                              </div>
+                              <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">N</a>
+                              </div>
+                              <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">O</a>
+                              </div>
+                              <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">P</a>
+                              </div>
+                              <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">Q</a>
+                              </div>
+                              <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">R</a>
+                              </div>
+                            </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                </div>
+                <!--/carousel-inner-->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i>
+</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i>
+</a>
+            </div>
+            <!--/myCarousel-->
+        </div>
+        <!--/well-->
+    </div>
+
+      <!-- Carrusel 2-->
+      <div class="col-md-12">
+       <h3>Categoría 2</h3>
+
+      <div class="well">
+          <div id="myCarousel2" class="carousel slide">
+
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel2" data-slide-to="0" class="active"> <i class="fa fa-window-minimize" aria-hidden="true"></i>
+</li>
+                  <li data-target="#myCarousel2" data-slide-to="1"><i class="fa fa-window-minimize" aria-hidden="true"></i>
+</li>
+                  <li data-target="#myCarousel2" data-slide-to="2"><i class="fa fa-window-minimize" aria-hidden="true"></i>
+</li>
+                </ol>
+                  <div class="item active">
+                      <div class="row content-items">
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">A</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">B</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">C</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">D</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">E</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">F</a>
+                        </div>
+                      </div>
+                      <!--/row-->
+                  </div>
+                  <!--/item-->
+                  <div class="item">
+                      <div class="row content-items">
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">G</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">H</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">I</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">J</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">K</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">L</a>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="item">
+                          <div class="row content-items">
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">M</a>
+                            </div>
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">N</a>
+                            </div>
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">O</a>
+                            </div>
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">P</a>
+                            </div>
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">Q</a>
+                            </div>
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">R</a>
+                            </div>
+                          </div>
+                      <!--/row-->
+                  </div>
+                  <!--/item-->
+              </div>
+              <!--/carousel-inner-->
+              <a class="left carousel-control" href="#myCarousel2" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i>
+</a>
+              <a class="right carousel-control" href="#myCarousel2" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i>
+</a>
+          </div>
+          <!--/myCarousel-->
+      </div>
+      <!--/well-->
+  </div>
+      <!-- Termina carrusel 2 -->
+
+      <!-- Carrusel 3-->
+      <div class="col-md-12">
+       <h3>Categoría 3</h3>
+
+      <div class="well">
+          <div id="myCarousel3" class="carousel slide">
+
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel3" data-slide-to="0" class="active"> <i class="fa fa-window-minimize" aria-hidden="true"></i>
+</li>
+                  <li data-target="#myCarousel3" data-slide-to="1"><i class="fa fa-window-minimize" aria-hidden="true"></i>
+</li>
+                  <li data-target="#myCarousel3" data-slide-to="2"><i class="fa fa-window-minimize" aria-hidden="true"></i>
+</li>
+                </ol>
+                  <div class="item active">
+                      <div class="row content-items">
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">A</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">B</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">C</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">D</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">E</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">F</a>
+                        </div>
+                      </div>
+                      <!--/row-->
+                  </div>
+                  <!--/item-->
+                  <div class="item">
+                      <div class="row content-items">
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">G</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">H</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">I</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">J</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">K</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">L</a>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="item">
+                          <div class="row content-items">
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">M</a>
+                            </div>
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">N</a>
+                            </div>
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">O</a>
+                            </div>
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">P</a>
+                            </div>
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">Q</a>
+                            </div>
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x120" alt="Image" class="img-responsive">R</a>
+                            </div>
+                          </div>
+                      <!--/row-->
+                  </div>
+                  <!--/item-->
+              </div>
+              <!--/carousel-inner-->
+              <a class="left carousel-control" href="#myCarousel3" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i>
+</a>
+              <a class="right carousel-control" href="#myCarousel3" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i>
+</a>
+          </div>
+          <!--/myCarousel-->
+      </div>
+      <!--/well-->
+  </div>
+      <!-- Termina carrusel 3 -->
+
+      <!-- Carrusel 4-->
+      <div class="col-md-12">
+       <h3>Categoría 4</h3>
+
+      <div class="well">
+          <div id="myCarousel4" class="carousel slide">
+
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel4" data-slide-to="0" class="active"> <i class="fa fa-window-minimize" aria-hidden="true"></i>
+</li>
+                  <li data-target="#myCarousel4" data-slide-to="1"><i class="fa fa-window-minimize" aria-hidden="true"></i>
+</li>
+                  <li data-target="#myCarousel4" data-slide-to="2"><i class="fa fa-window-minimize" aria-hidden="true"></i>
+</li>
+                </ol>
+                  <div class="item active">
+                      <div class="row content-items">
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">A</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">B</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">C</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">D</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">E</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">F</a>
+                        </div>
+                      </div>
+                      <!--/row-->
+                  </div>
+                  <!--/item-->
+                  <div class="item">
+                      <div class="row content-items">
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">G</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">H</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">I</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">J</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">K</a>
+                        </div>
+                        <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">L</a>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="item">
+                          <div class="row content-items">
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">M</a>
+                            </div>
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">N</a>
+                            </div>
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">O</a>
+                            </div>
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">P</a>
+                            </div>
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">Q</a>
+                            </div>
+                            <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/215x360" alt="Image" class="img-responsive">R</a>
+                            </div>
+                          </div>
+                      <!--/row-->
+                  </div>
+                  <!--/item-->
+              </div>
+              <!--/carousel-inner-->
+              <a class="left carousel-control" href="#myCarousel4" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i>
+</a>
+              <a class="right carousel-control" href="#myCarousel4" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i>
+</a>
+          </div>
+          <!--/myCarousel-->
+      </div>
+      <!--/well-->
+  </div>
+      <!-- Termina carrusel 4 -->
+        <!-- /.box -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="pull-right hidden-xs">
+        <b>Version</b> 1
+      </div>
+      <strong>Interfaces 2017 </strong>
+    </div>
+    <!-- /.container -->
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="dist/bootstrap/js/bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="plugins/slimScroll/jquery.slimscroll.js"></script>
+<!-- FastClick -->
+<script src="plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/app.js"></script>
+<!-- AdminLTE for demo purposes -->
+<!-- <script src="dist/js/demo.js"></script>-->
+</body>
+</html>
